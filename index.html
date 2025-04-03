@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        input[type="text"], button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .checkbox-group {
+            text-align: left;
+            display: inline-block;
+        }
+        .checkbox-group label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Generate Your Personalized Avatar</h2>
+        <form method="POST">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" required><br><br>
+
+            <p>What are the two best qualities that describe you? (Select exactly two)</p>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="traits" value="hardworking"> Hardworking</label>
+                <label><input type="checkbox" name="traits" value="creative"> Creative</label>
+                <label><input type="checkbox" name="traits" value="smart"> Smart</label>
+                <label><input type="checkbox" name="traits" value="kind"> Kind</label>
+                <label><input type="checkbox" name="traits" value="ambitious"> Ambitious</label>
+            </div>
+            <br><br>
+            <button type="submit">Generate Avatar</button>
+        </form>
+    </div>
+</body>
+</html>
