@@ -1,4 +1,3 @@
-# Emoji-Intro
 # Emoji Avatar Intro Teller
 
 This is a simple **Emoji Avatar Intro Teller** that generates a personalized introduction and an avatar based on the selected traits. Users enter their name and choose two traits from a predefined list, and the system creates a unique emoji-based avatar and introduction.
